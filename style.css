@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080d19;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #101a2c;
+  border-bottom: 1px solid #bd963b;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+header h2 {
+  color: #f4c54e;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 18px;
+}
+
+.hero {
+  background: linear-gradient(130deg,#1c2942,#302514);
+  border: 1px solid #b58a32;
+  border-radius: 18px;
+  text-align: center;
+  padding: 35px 15px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #f5c451;
+  font-size: 30px;
+}
+
+.panel {
+  background: #121d30;
+  border: 1px solid #283956;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 18px 0;
+}
+
+.panel h2 {
+  color: #f4c451;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin: 12px 0;
+  background: #081222;
+  border: 1px solid #3a4b69;
+  border-radius: 9px;
+  color: white;
+  font-size: 15px;
+}
+
+button {
+  background: linear-gradient(120deg,#f5d16c,#c18c27);
+  color: #151515;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px 3px;
+}
+
+button:hover {
+  opacity: .85;
+}
+
+.red {
+  background: #a92e49;
+  color: white;
+}
+
+a {
+  color: #f5c451;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 12px;
+}
+
+.wallet {
+  font-size: 22px;
+  color: #f5c451;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.user-row {
+  background: #1a2941;
+  border: 1px solid #344765;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.user-row h3 {
+  color: #f5c451;
+}
+
+footer {
+  text-align: center;
+  color: #a8b3c7;
+  padding: 25px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media(max-width:600px) {
+  .hero h1 {
+    font-size: 23px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+}

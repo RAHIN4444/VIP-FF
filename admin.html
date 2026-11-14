@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIP ORA - Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h2>👑 VIP ORA ADMIN</h2>
+  <a href="user.html">User Website</a>
+</header>
+
+<main>
+  <section id="loginBox" class="panel">
+    <h2>Admin Login</h2>
+    <input id="adminPassword" type="password"
+      placeholder="Admin Password">
+    <button onclick="adminLogin()">LOGIN</button>
+    <p id="loginMessage"></p>
+  </section>
+
+  <div id="dashboard" hidden>
+    <section class="hero">
+      <h1>ADMIN DASHBOARD</h1>
+      <p>VIP ORA TOURNAMENT MANAGEMENT</p>
+      <button class="red" onclick="adminLogout()">Logout</button>
+    </section>
+
+    <div class="stats">
+      <div class="panel">Total Members
+        <h2 id="totalMembers">0</h2>
+      </div>
+      <div class="panel">Total Tournaments
+        <h2 id="totalTournaments">0</h2>
+      </div>
+    </div>
+
+    <section class="panel">
+      <h2>👥 All Users</h2>
+      <input id="searchUser"
+        placeholder="Search by name or Gmail"
+        oninput="showAdminUsers()">
+      <div id="adminUsers"></div>
+    </section>
+
+    <section class="panel">
+      <h2>💰 Add Unlimited Wallet Points</h2>
+      <input id="creditEmail" placeholder="User Gmail">
+      <input id="creditAmount" type="number"
+        min="1" step="any" placeholder="Amount of points">
+      <button onclick="addWallet()">ADD POINTS</button>
+      <p id="creditMessage"></p>
+    </section>
+
+    <section class="panel">
+      <h2>🏆 Create New Tournament</h2>
+      <input id="tName" placeholder="Tournament Name">
+      <input id="tGame" placeholder="Game Name">
+      <input id="tFee" type="number" min="0"
+        placeholder="Entry Fee (Points)">
+      <input id="tPrize" type="number" min="0"
+        placeholder="Prize Points">
+      <button onclick="createTournament()">
+        PUBLISH TOURNAMENT
+      </button>
+    </section>
+
+    <section class="panel">
+      <h2>📢 Published Tournaments</h2>
+      <div id="adminTournaments"></div>
+    </section>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

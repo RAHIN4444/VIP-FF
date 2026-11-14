@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>VIP ORA TOURNAMENT</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+  <h2>🏆 VIP ORA</h2>
+  <button onclick="installApp()">INSTALL APP</button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>VIP ORA TOURNAMENT</h1>
+    <p>Play • Compete • Become Champion</p>
+    <h2>Welcome to VIP Arena</h2>
+  </section>
+
+  <section class="panel" id="registerBox">
+    <h2>📝 Create Account</h2>
+    <input id="userName" placeholder="Your Name">
+    <input id="userEmail" type="email"
+      placeholder="Your Gmail">
+    <button onclick="registerUser()">REGISTER</button>
+    <p id="registerMessage"></p>
+  </section>
+
+  <section class="panel" id="accountBox" hidden>
+    <h2>👤 My Account</h2>
+    <h3 id="welcomeName"></h3>
+    <p id="welcomeEmail"></p>
+    <div class="wallet">
+      💰 My Wallet:
+      <span id="userWallet">0</span> Points
+    </div>
+    <button onclick="enableNotifications()">
+      🔔 Enable Notifications
+    </button>
+    <button class="red" onclick="userLogout()">
+      LOGOUT
+    </button>
+  </section>
+
+  <section class="panel">
+    <h2>🔔 Notifications</h2>
+    <div id="userNotifications">
+      কোনো নতুন নোটিফিকেশন নেই।
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>🏆 Available Tournaments</h2>
+    <div id="userTournaments"></div>
+  </section>
+
+  <section class="panel">
+    <h2>👥 Tournament Members</h2>
+    <div id="userMembers"></div>
+  </section>
+
+  <section class="panel">
+    <h2>📋 My Joined Tournaments</h2>
+    <div id="myTournaments"></div>
+  </section>
+</main>
+
+<footer>
+  VIP ORA TOURNAMENT © 2026
+  <p>Virtual points only. No cash withdrawal.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

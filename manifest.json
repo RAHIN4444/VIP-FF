@@ -1,0 +1,11 @@
+
+{
+  "name": "VIP ORA TOURNAMENT",
+  "short_name": "VIP ORA",
+  "description": "VIP ORA Gaming Tournament",
+  "start_url": "user.html",
+  "display": "standalone",
+  "background_color": "#080d19",
+  "theme_color": "#080d19",
+  "orientation": "portrait"
+}
